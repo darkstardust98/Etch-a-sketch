@@ -25,4 +25,6 @@ for (let i = 0; i < elements.length; i++) {
     })
 }   
 
-
+document.getElementById("prompt").addEventListener("click", function() {
+        let userInput = prompt("Please enter you prefered size in squares per side: ");
+}) 
