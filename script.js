@@ -3,7 +3,7 @@ document.getElementById("grid-container").innerHTML = createGrid();
 function createGrid() {
     const gridSize = 15;
     let grid = "";
-    for (i = 0; i <= gridSize; i++) {
+    for (let i = 0; i <= gridSize; i++) {
         for (j = 0; j <= gridSize; j++) {
             grid += '<div class="square"></div>';
         }
@@ -12,5 +12,17 @@ function createGrid() {
     return grid;
 }
 
+var elements = document.getElementsByClassName("square");
 
-// console.log("test");
+for (let i = 0; i < elements.length; i++) {
+    //Making square black upon hover
+    elements[i].addEventListener("mouseenter", function(event) {
+        event.target.style.backgroundColor = "black";
+    })
+    //Making square white again upon hover end
+    elements[i].addEventListener("mouseleave", function(event) {
+        event.target.style.backgroundColor = "white";
+    })
+}   
+
+
