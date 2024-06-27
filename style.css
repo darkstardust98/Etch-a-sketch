@@ -4,13 +4,9 @@
 }
 
 #grid-container .square {
-    /* border: 1px solid balck; */
     width: 20px;
     height: 20px;
-    /* background-color: black; */
+    background-color: white;
     margin: 5;
 }
 
-#grid-containter .hover {
-    background-color: black;
-}
