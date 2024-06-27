@@ -5,7 +5,7 @@ function createGrid() {
     let grid = "";
     for (i = 0; i <= gridSize; i++) {
         for (j = 0; j <= gridSize; j++) {
-            grid += '<div id="square"></div>';
+            grid += '<div class="square"></div>';
         }
         grid += '<br>';
     }
