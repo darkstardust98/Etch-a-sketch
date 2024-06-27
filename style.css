@@ -4,8 +4,8 @@
 }
 
 #grid-container .square {
-    width: 20px;
-    height: 20px;
+    width: 5px;
+    height: 5px;
     background-color: white;
     margin: 5;
 }
